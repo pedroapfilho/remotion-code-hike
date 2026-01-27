@@ -7,26 +7,27 @@
   "type": "module",
   "dependencies": {
     "@code-hike/lighter": "1.0.3",
-    "@remotion/cli": "^4.0.0",
-    "@remotion/google-fonts": "^4.0.0",
-    "@remotion/layout-utils": "^4.0.0",
-    "@remotion/studio": "^4.0.0",
+    "@remotion/cli": "^4.0.410",
+    "@remotion/google-fonts": "^4.0.410",
+    "@remotion/layout-utils": "^4.0.410",
+    "@remotion/studio": "^4.0.410",
+    "@remotion/zod-types": "4.0.410",
     "codehike": "1.0.7",
     "polished": "4.3.1",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "remotion": "^4.0.0",
-    "twoslash-cdn": "0.3.1",
-    "zod": "3.25.62"
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "remotion": "^4.0.410",
+    "twoslash-cdn": "0.3.6",
+    "zod": "3.22.3"
   },
   "devDependencies": {
-    "@remotion/eslint-config-flat": "^4.0.0",
-    "@types/react": "19.1.8",
-    "@types/react-dom": "^19.1.6",
-    "@types/web": "0.0.241",
-    "eslint": "9.28.0",
-    "prettier": "3.5.3",
-    "typescript": "5.8.3"
+    "@remotion/eslint-config-flat": "^4.0.410",
+    "@types/react": "19.2.10",
+    "@types/react-dom": "^19.2.3",
+    "@types/web": "0.0.323",
+    "eslint": "9.39.2",
+    "prettier": "3.8.1",
+    "typescript": "5.9.3"
   },
   "scripts": {
     "dev": "remotion studio",

@@ -14,4 +14,5 @@ export const width = z.discriminatedUnion("type", [
 export const schema = z.object({
   theme: themeSchema,
   width,
+  folder: z.string().optional(),
 });

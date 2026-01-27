@@ -32,8 +32,9 @@ export const callout: AnnotationHandler = {
 
     const themeColors = useThemeColors();
 
-    const color = readableColor(themeColors.background);
-    const calloutColor = mix(0.08, color, themeColors.background);
+    const background = themeColors.background || "#1e1e1e";
+    const color = readableColor(background);
+    const calloutColor = mix(0.08, color, background);
 
     return (
       <>

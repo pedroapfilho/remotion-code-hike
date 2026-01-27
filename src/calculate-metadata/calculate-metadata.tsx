@@ -18,7 +18,7 @@ import { HighlightedCode } from "codehike/code";
 export const calculateMetadata: CalculateMetadataFunction<
   Props & z.infer<typeof schema>
 > = async ({ props }) => {
-  const contents = await getFiles();
+  const contents = await getFiles(props.folder);
 
   await waitUntilDone();
   const widthPerCharacter = measureText({
