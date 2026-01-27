@@ -3,7 +3,7 @@ import { Main } from "./main";
 
 import { calculateMetadata } from "./calculate-metadata/calculate-metadata";
 import { schema } from "./calculate-metadata/schema";
-import { getFolders } from "./calculate-metadata/get-files";
+import { getFolders } from "./calculate-metadata/get-data";
 
 export const RemotionRoot = () => {
   const origins = getFolders();

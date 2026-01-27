@@ -4,7 +4,7 @@ import { getThemeColors } from "@code-hike/lighter";
 import { Props } from "../main";
 import { schema } from "./schema";
 import { processSnippet } from "./process-snippet";
-import { getFiles } from "./get-files";
+import { getFiles } from "./get-data";
 import { measureText } from "@remotion/layout-utils";
 import {
   fontFamily,

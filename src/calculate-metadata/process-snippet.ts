@@ -2,7 +2,7 @@
 //
 // import { highlight } from "codehike/code";
 // import { createTwoslashFromCDN } from "twoslash-cdn";
-// import { PublicFolderFile } from "./get-files";
+// import { PublicFolderFile } from "./get-data";
 // import { Theme } from "./theme";
 // import { CompilerOptions, JsxEmit, ModuleKind, ScriptTarget } from "typescript";
 
@@ -75,7 +75,7 @@
 // };
 
 import { highlight } from "codehike/code";
-import { PublicFolderFile } from "./get-files";
+import { PublicFolderFile } from "./get-data";
 import { Theme } from "./theme";
 
 export const processSnippet = async (step: PublicFolderFile, theme: Theme) => {
