@@ -1,21 +1,9 @@
 // ✅ Rich: Layered textures create atmosphere and depth
 function Hero() {
   return (
-    <section
-      style={{
-        background: `
-          radial-gradient(circle at 20% 50%, #2a1a4a 0%, transparent 50%),
-          radial-gradient(circle at 80% 80%, #1a3a4a 0%, transparent 40%),
-          linear-gradient(180deg, #0a0a0a 0%, #1a1a2e 100%)
-        `,
-        padding: "80px 40px",
-        position: "relative",
-      }}
-    >
-      <div style={{ /* noise overlay via pseudo-element */ }} />
-      <h1 style={{ color: "white", position: "relative" }}>
-        Build Something Great
-      </h1>
+    <section className="relative bg-gradient-to-b from-neutral-950 to-neutral-900">
+      <div className="absolute inset-0 bg-gradient-radial from-neutral-800/30 to-transparent" />
+      <h1 className="text-white relative">Build Something Great</h1>
     </section>
   );
 }

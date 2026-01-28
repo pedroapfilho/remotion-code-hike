@@ -1,13 +1,7 @@
 // ❌ Plain: Basic borders add no character
 function Quote({ text, author }: { text: string; author: string }) {
   return (
-    <blockquote
-      style={{
-        border: "1px solid #ccc",
-        padding: "20px",
-        margin: "20px 0",
-      }}
-    >
+    <blockquote className="border border-neutral-300">
       <p>{text}</p>
       <cite>— {author}</cite>
     </blockquote>

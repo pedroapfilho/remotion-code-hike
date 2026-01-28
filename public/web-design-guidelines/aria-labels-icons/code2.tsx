@@ -1,7 +1,7 @@
 // ✅ Right: Add aria-label for screen readers
 function Toolbar() {
   return (
-    <div role="toolbar" aria-label="Document actions">
+    <div role="toolbar" aria-label="Document actions" className="...">
       <button onClick={handleSave} aria-label="Save document">
         <SaveIcon aria-hidden="true" />
       </button>

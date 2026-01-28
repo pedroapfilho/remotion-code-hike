@@ -3,8 +3,8 @@ function Modal({ isOpen, children }: ModalProps) {
   if (!isOpen) return null;
 
   return (
-    <div className="modal-backdrop">
-      <div className="modal">
+    <div className="fixed inset-0 ...">
+      <div className="...">
         {children}
         <button onClick={onClose}>Close</button>
       </div>

@@ -6,10 +6,7 @@ function Avatar({ src, name }: { src: string; name: string }) {
       alt={name}
       width={48}
       height={48}
-      style={{
-        aspectRatio: "1 / 1",
-        objectFit: "cover",
-      }}
+      className="..."
     />
   );
 }

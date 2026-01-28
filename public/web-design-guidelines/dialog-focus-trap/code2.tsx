@@ -12,7 +12,7 @@ function Modal({ isOpen, onClose, children }: ModalProps) {
   }, [isOpen]);
 
   return (
-    <dialog ref={dialogRef} onClose={onClose}>
+    <dialog ref={dialogRef} onClose={onClose} className="...">
       {children}
       <button onClick={onClose}>Close</button>
     </dialog>

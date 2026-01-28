@@ -1,14 +1,19 @@
 import { AbsoluteFill, Series, useVideoConfig } from "remotion";
 import { ProgressBar } from "./progress-bar";
 import { CodeTransition } from "./code-transition";
-import { HighlightedCode } from "codehike/code";
 import { ThemeColors, ThemeProvider } from "./calculate-metadata/theme";
 import { CSSProperties, useMemo } from "react";
 import { RefreshOnCodeChange } from "./reload-on-code-change";
 import { verticalPadding } from "./font";
+import { HighlightedCode } from "codehike/code";
+
+export type CodeStep = {
+  code: HighlightedCode;
+  prevCode: HighlightedCode | null;
+};
 
 export type Props = {
-  steps: HighlightedCode[] | null;
+  steps: CodeStep[] | null;
   themeColors: ThemeColors | null;
   codeWidth: number | null;
 };
@@ -55,11 +60,11 @@ export const Main = ({ steps, themeColors, codeWidth }: Props) => {
                   key={index}
                   layout="none"
                   durationInFrames={stepDuration}
-                  name={step.meta}
+                  name={step.code.meta}
                 >
                   <CodeTransition
-                    oldCode={steps[index - 1]}
-                    newCode={step}
+                    oldCode={step.prevCode}
+                    newCode={step.code}
                     durationInFrames={transitionDuration}
                   />
                 </Series.Sequence>

@@ -1,7 +1,7 @@
 // ❌ Wrong: Icon-only buttons without labels are inaccessible
 function Toolbar() {
   return (
-    <div>
+    <div className="...">
       <button onClick={handleSave}>
         <SaveIcon />
       </button>

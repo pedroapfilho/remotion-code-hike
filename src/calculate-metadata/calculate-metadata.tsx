@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { CalculateMetadataFunction } from "remotion";
 import { getThemeColors } from "@code-hike/lighter";
-import { Props } from "../main";
+import { CodeStep, Props } from "../main";
 import { schema } from "./schema";
 import { processSnippet } from "./process-snippet";
 import { getFiles } from "./get-data";
@@ -33,7 +33,7 @@ export const calculateMetadata: CalculateMetadataFunction<
       .map(({ value }) => value.split("\n"))
       .flat()
       .map((value) => value.replaceAll("\t", " ".repeat(tabSize)).length)
-      .flat(),
+      .flat()
   );
   const codeWidth = widthPerCharacter * maxCharacters;
 
@@ -41,10 +41,17 @@ export const calculateMetadata: CalculateMetadataFunction<
 
   const themeColors = await getThemeColors(props.theme);
 
-  const twoSlashedCode: HighlightedCode[] = [];
+  // Process code snippets for syntax highlighting
+  const highlightedCode: HighlightedCode[] = [];
   for (const snippet of contents) {
-    twoSlashedCode.push(await processSnippet(snippet, props.theme));
+    highlightedCode.push(await processSnippet(snippet, props.theme));
   }
+
+  // Build steps
+  const steps: CodeStep[] = highlightedCode.map((code, i) => ({
+    code,
+    prevCode: i > 0 ? highlightedCode[i - 1] : null,
+  }));
 
   const naturalWidth = codeWidth + horizontalPadding * 2;
   const divisibleByTwo = Math.ceil(naturalWidth / 2) * 2; // MP4 requires an even width
@@ -53,7 +60,7 @@ export const calculateMetadata: CalculateMetadataFunction<
   const minimumWidthApplied = Math.max(minimumWidth, divisibleByTwo);
 
   return {
-    durationInFrames: contents.length * defaultStepDuration,
+    durationInFrames: steps.length * defaultStepDuration,
     width:
       props.width.type === "fixed"
         ? Math.max(minimumWidthApplied, props.width.value)
@@ -61,7 +68,7 @@ export const calculateMetadata: CalculateMetadataFunction<
     props: {
       theme: props.theme,
       width: props.width,
-      steps: twoSlashedCode,
+      steps,
       themeColors,
       codeWidth,
     },

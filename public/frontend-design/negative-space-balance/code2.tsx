@@ -1,17 +1,14 @@
 // ✅ Spacious: Generous whitespace creates elegance
 function PricingCard() {
   return (
-    <div style={{ padding: "48px 40px" }}>
-      <h3 style={{ margin: "0 0 16px", fontSize: "1.5rem" }}>Pro Plan</h3>
-      <p style={{ margin: "0 0 32px", fontSize: "2.5rem" }}>
-        $29<span style={{ fontSize: "1rem" }}>/month</span>
-      </p>
-      <ul style={{ margin: "0 0 40px", listStyle: "none", padding: 0 }}>
-        <li style={{ padding: "12px 0" }}>Unlimited projects</li>
-        <li style={{ padding: "12px 0" }}>Priority support</li>
-        <li style={{ padding: "12px 0" }}>Advanced analytics</li>
+    <div className="py-12 px-10">
+      <h3 className="mb-4 text-2xl">Pro Plan</h3>
+      <p className="mb-8 text-4xl">$29<span className="text-base">/month</span></p>
+      <ul className="mb-10 space-y-3">
+        <li>Unlimited projects</li>
+        <li>Priority support</li>
       </ul>
-      <button style={{ width: "100%", padding: "16px" }}>Get Started</button>
+      <button className="w-full py-4">Get Started</button>
     </div>
   );
 }
