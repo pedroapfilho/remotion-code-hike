@@ -1,0 +1,3 @@
+Input Autocomplete Attributes
+
+Use appropriate autocomplete values to enable browser autofill. Combine with correct type and inputMode for the best mobile keyboard. This dramatically speeds up form completion and reduces user frustration and typos.

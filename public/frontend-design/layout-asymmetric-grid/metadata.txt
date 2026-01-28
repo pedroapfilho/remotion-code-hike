@@ -1,0 +1,3 @@
+Asymmetric Grid Layout
+
+Break away from uniform grids. Use varying column widths and span elements across multiple rows or columns to create visual hierarchy and interest. Asymmetry guides the eye and highlights key content.

@@ -1,0 +1,3 @@
+Semantic Buttons Over Divs
+
+Use native button elements for clickable actions instead of divs with onClick. Buttons provide keyboard support (Enter/Space), focus management, and proper ARIA roles for free. Style buttons to look like cards rather than making divs act like buttons.

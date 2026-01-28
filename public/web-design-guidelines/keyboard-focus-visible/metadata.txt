@@ -1,0 +1,3 @@
+Focus Visible for Keyboard
+
+Never remove focus outlines entirely - keyboard users need them to navigate. Use :focus-visible to show focus rings only for keyboard navigation, not mouse clicks. This maintains aesthetics for mouse users while keeping the interface accessible.

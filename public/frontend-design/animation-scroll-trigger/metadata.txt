@@ -1,0 +1,3 @@
+Scroll-Triggered Animations
+
+Use CSS scroll-driven animations with animation-timeline: view() to reveal content as users scroll. This creates engaging, performant animations without JavaScript. Set animation-range to control when the effect triggers.

@@ -1,0 +1,3 @@
+Reduced Motion Support
+
+Honor prefers-reduced-motion for users with vestibular disorders or motion sensitivity. Provide a reduced or alternative animation - don't just disable animations entirely. This ensures everyone can use your interface comfortably.

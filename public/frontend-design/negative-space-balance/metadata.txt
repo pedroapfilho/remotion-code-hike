@@ -1,0 +1,3 @@
+Negative Space Balance
+
+Generous whitespace signals quality and lets content breathe. Increase padding, margins, and line-height beyond what feels "enough." The space between elements is as important as the elements themselves.

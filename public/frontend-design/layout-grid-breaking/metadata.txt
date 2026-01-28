@@ -1,0 +1,3 @@
+Grid-Breaking Elements
+
+Let key elements break out of their containers for dramatic effect. Use negative margins or absolute positioning to create overlap and visual tension. This draws attention and makes layouts feel less templated.

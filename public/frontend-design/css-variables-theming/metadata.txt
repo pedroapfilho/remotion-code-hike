@@ -1,0 +1,3 @@
+CSS Variables for Theming
+
+Define colors, spacing, and typography as CSS custom properties in :root. This ensures visual consistency across components and makes theme changes trivial. Semantic names like --accent convey purpose, not just color.

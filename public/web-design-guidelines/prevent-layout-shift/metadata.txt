@@ -1,0 +1,3 @@
+Prevent Layout Shift
+
+Always specify width and height on images to reserve space before they load. Use aspect-ratio for responsive sizing. This prevents Cumulative Layout Shift (CLS) which disrupts users and hurts Core Web Vitals scores.

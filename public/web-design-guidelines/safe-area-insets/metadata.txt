@@ -1,0 +1,3 @@
+Safe Area Insets
+
+Use env(safe-area-inset-*) for fixed elements on devices with notches or home indicators. Without this, content gets hidden behind hardware features. Don't forget to set viewport-fit=cover in your meta viewport tag.

@@ -1,0 +1,3 @@
+Native Dialog Focus Trap
+
+Use the native dialog element with showModal() for automatic focus trapping, Escape key handling, and proper backdrop. This avoids complex focus management code and ensures consistent behavior across browsers.

@@ -1,0 +1,3 @@
+Hover States That Surprise
+
+Move beyond opacity changes. Combine transform, shadow, and color shifts for hover states that feel responsive and alive. Add distinct :active states for tactile feedback. Small details create memorable interactions.

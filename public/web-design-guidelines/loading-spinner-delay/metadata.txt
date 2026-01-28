@@ -1,0 +1,3 @@
+Loading Spinner Delay
+
+Add a show delay (~200ms) before displaying spinners to avoid flicker on fast responses. Once visible, keep spinners shown for a minimum time (~300ms) so they don't flash. This creates a smoother perceived experience.

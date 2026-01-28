@@ -1,0 +1,3 @@
+Inline Form Validation
+
+Show errors inline next to the relevant field, not in alerts or toasts. On submit, focus the first field with an error. Use aria-invalid and role="alert" so screen readers announce the error. This helps all users quickly identify and fix issues.

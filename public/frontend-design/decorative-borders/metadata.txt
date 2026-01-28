@@ -1,0 +1,3 @@
+Decorative Borders
+
+Transform functional borders into design elements. Use gradient borders with border-image, asymmetric accents, or combine with background gradients. Add typographic flourishes like oversized quote marks for personality.

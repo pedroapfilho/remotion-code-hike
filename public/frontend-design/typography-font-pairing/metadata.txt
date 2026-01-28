@@ -1,0 +1,3 @@
+Typography Font Pairing
+
+Avoid generic system fonts like Arial or Inter. Pair a distinctive display font with a refined body font to create visual hierarchy and personality. Use fluid typography with clamp() and fine-tune letter-spacing for polish.

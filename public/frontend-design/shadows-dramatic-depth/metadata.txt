@@ -1,0 +1,3 @@
+Layered Dramatic Shadows
+
+Stack multiple shadows at increasing distances to simulate realistic light diffusion. This creates the illusion of physical elevation. Combine ambient (soft, spread) and direct (sharp, offset) shadows for maximum depth.

@@ -1,0 +1,3 @@
+Staggered Animation Reveals
+
+One orchestrated page load beats scattered micro-interactions. Use animation-delay to create cascading reveals that guide the eye through content. Calculate delay based on index for natural visual rhythm.

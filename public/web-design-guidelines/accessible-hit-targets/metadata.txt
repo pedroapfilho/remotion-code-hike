@@ -1,0 +1,3 @@
+Accessible Hit Targets
+
+Touch targets must be at least 44px on mobile and 24px on desktop. Small visual elements can have expanded invisible hit areas. This prevents frustrating mis-taps and makes your interface usable for everyone, including users with motor impairments.

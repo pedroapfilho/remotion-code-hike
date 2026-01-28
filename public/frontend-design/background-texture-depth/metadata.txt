@@ -1,0 +1,3 @@
+Background Texture and Depth
+
+Move beyond solid colors. Layer gradient meshes, radial gradients, and noise textures to create atmosphere. Multiple overlapping gradients with different positions add visual richness without images.

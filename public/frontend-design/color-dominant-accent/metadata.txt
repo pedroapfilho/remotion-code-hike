@@ -1,0 +1,3 @@
+Dominant Color with Sharp Accent
+
+Avoid timid, evenly-distributed gray palettes. Commit to a dominant background with one or two sharp accent colors that draw the eye. Use CSS variables for a cohesive, maintainable color system.
