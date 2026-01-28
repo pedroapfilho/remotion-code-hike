@@ -6,7 +6,6 @@ import { ThemeColors, ThemeProvider } from "./calculate-metadata/theme";
 import { CSSProperties, useMemo } from "react";
 import { RefreshOnCodeChange } from "./reload-on-code-change";
 import { verticalPadding } from "./font";
-import { getRemotionEnvironment } from "remotion";
 
 export type Props = {
   steps: HighlightedCode[] | null;
@@ -21,7 +20,7 @@ export const Main = ({ steps, themeColors, codeWidth }: Props) => {
 
   const { durationInFrames } = useVideoConfig();
   const stepDuration = durationInFrames / steps.length;
-  const transitionDuration = 60;
+  const transitionDuration = 30;
 
   if (!themeColors) {
     throw new Error("Theme colors are not defined");
@@ -38,8 +37,6 @@ export const Main = ({ steps, themeColors, codeWidth }: Props) => {
       padding: `${verticalPadding}px 0px`,
     };
   }, []);
-
-  const remotionEnvironment = getRemotionEnvironment();
 
   return (
     <ThemeProvider themeColors={themeColors}>
@@ -71,7 +68,7 @@ export const Main = ({ steps, themeColors, codeWidth }: Props) => {
           </AbsoluteFill>
         </AbsoluteFill>
       </AbsoluteFill>
-      {!remotionEnvironment.isRendering && <RefreshOnCodeChange />}
+      <RefreshOnCodeChange />
     </ThemeProvider>
   );
 };

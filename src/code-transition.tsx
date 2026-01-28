@@ -1,14 +1,8 @@
-import { Easing, interpolate } from "remotion";
-import { continueRender, delayRender, useCurrentFrame } from "remotion";
+import { Easing, interpolate, useDelayRender } from "remotion";
+import { useCurrentFrame } from "remotion";
 import { Pre, HighlightedCode, AnnotationHandler } from "codehike/code";
-import {
-  useEffect,
-  useLayoutEffect,
-  useMemo,
-  useState,
-  useRef,
-  CSSProperties,
-} from "react";
+import React, { useEffect, useLayoutEffect, useMemo, useState } from "react";
+
 import {
   calculateTransitions,
   getStartingSnapshot,
@@ -24,7 +18,7 @@ import { fontFamily, fontSize, tabSize } from "./font";
 export function CodeTransition({
   oldCode,
   newCode,
-  durationInFrames = 60,
+  durationInFrames = 30,
 }: {
   readonly oldCode: HighlightedCode | null;
   readonly newCode: HighlightedCode;
@@ -32,10 +26,11 @@ export function CodeTransition({
 }) {
   const frame = useCurrentFrame();
 
-  const ref = useRef<HTMLPreElement>(null);
+  const ref = React.useRef<HTMLPreElement>(null);
   const [oldSnapshot, setOldSnapshot] =
     useState<TokenTransitionsSnapshot | null>(null);
-  const [handle] = useState(() => delayRender());
+  const { delayRender, continueRender } = useDelayRender();
+  const [handle] = React.useState(() => delayRender());
 
   const prevCode: HighlightedCode = useMemo(() => {
     return oldCode || { ...newCode, tokens: [], annotations: [] };
@@ -51,13 +46,14 @@ export function CodeTransition({
     }
   }, [oldSnapshot]);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useLayoutEffect(() => {
     if (!oldSnapshot) {
       setOldSnapshot(getStartingSnapshot(ref.current!));
       return;
     }
+
     const transitions = calculateTransitions(ref.current!, oldSnapshot);
+
     transitions.forEach(({ element, keyframes, options }) => {
       const delay = durationInFrames * options.delay;
       const duration = durationInFrames * options.duration;
@@ -82,13 +78,13 @@ export function CodeTransition({
       });
     });
     continueRender(handle);
-  });
+  }, [frame, durationInFrames, oldSnapshot, continueRender, handle]);
 
   const handlers: AnnotationHandler[] = useMemo(() => {
     return [tokenTransitions, callout, errorInline, errorMessage];
   }, []);
 
-  const style: CSSProperties = useMemo(() => {
+  const style: React.CSSProperties = useMemo(() => {
     return {
       position: "relative",
       fontSize,

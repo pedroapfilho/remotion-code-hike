@@ -1,8 +1,8 @@
 import { getStaticFiles, reevaluateComposition } from "@remotion/studio";
 import { useState } from "react";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { watchPublicFolder } from "@remotion/studio";
-import { getRemotionEnvironment } from "remotion";
+import { useRemotionEnvironment } from "remotion";
 
 const getCurrentHash = () => {
   const files = getStaticFiles();
@@ -11,14 +11,17 @@ const getCurrentHash = () => {
   return contents.join("");
 };
 
-export const RefreshOnCodeChange = () => {
+export const RefreshOnCodeChange: React.FC = () => {
   const [files, setFiles] = useState(getCurrentHash());
+  const env = useRemotionEnvironment();
 
   useEffect(() => {
-    if (getRemotionEnvironment().isReadOnlyStudio) {
+    if (env.isReadOnlyStudio) {
       return;
     }
-
+    if (!env.isStudio) {
+      return;
+    }
     const { cancel } = watchPublicFolder(() => {
       const hash = getCurrentHash();
       if (hash !== files) {
@@ -30,7 +33,7 @@ export const RefreshOnCodeChange = () => {
     return () => {
       cancel();
     };
-  }, [files]);
+  }, [files, env.isReadOnlyStudio, env.isStudio]);
 
   return null;
 };

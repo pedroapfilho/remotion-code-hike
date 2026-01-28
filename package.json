@@ -4,7 +4,6 @@
   "description": "Remotion x CodeHike",
   "private": true,
   "repository": {},
-  "license": "UNLICENSED",
   "type": "module",
   "scripts": {
     "dev": "remotion studio",
