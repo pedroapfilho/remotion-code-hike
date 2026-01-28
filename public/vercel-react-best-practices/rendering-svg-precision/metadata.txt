@@ -1,0 +1,3 @@
+SVG Coordinate Precision
+
+Round SVG coordinates to reduce file size and improve rendering. Excessive decimal precision in SVG paths creates larger files and sub-pixel rendering inconsistencies.

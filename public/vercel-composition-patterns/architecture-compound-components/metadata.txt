@@ -1,0 +1,3 @@
+Compound Components
+
+Structure complex components as compound components with shared context. Each subcomponent accesses shared state via context, not props. Consumers compose exactly the pieces they need with natural JSX syntax.

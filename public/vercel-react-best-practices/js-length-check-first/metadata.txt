@@ -1,0 +1,3 @@
+Length Check First
+
+Check array length before expensive operations. Skip processing empty arrays early to avoid unnecessary setup, iteration, and computation when there's nothing to process.

@@ -1,0 +1,3 @@
+Skip Memo for Simple Expressions
+
+Don't useMemo for simple calculations. Memoization has overhead - only use it for expensive computations. Simple expressions like string concatenation are faster without memo.

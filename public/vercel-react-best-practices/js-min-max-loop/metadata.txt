@@ -1,0 +1,3 @@
+Single Pass Min/Max
+
+Find min and max in a single loop pass. Using separate Math.min() and Math.max() with spread iterates twice - combine into one loop for large arrays to halve iterations.

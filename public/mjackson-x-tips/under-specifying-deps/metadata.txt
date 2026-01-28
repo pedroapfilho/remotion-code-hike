@@ -1,0 +1,3 @@
+Under-specifying Dependencies
+
+Include all values from the component scope that change over time in the useEffect dependency array. Missing dependencies cause stale closures and bugs. Use the exhaustive-deps ESLint rule to catch these issues automatically.

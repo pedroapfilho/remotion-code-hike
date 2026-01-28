@@ -1,0 +1,3 @@
+Defer Non-Critical Awaits
+
+Don't await operations that aren't needed for the response. Use fire-and-forget patterns for analytics, logging, or background tasks to reduce response latency.

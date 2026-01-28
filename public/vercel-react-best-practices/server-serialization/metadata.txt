@@ -1,0 +1,3 @@
+Minimize RSC Serialization
+
+Pass only the fields Client Components actually need, not entire objects. Every prop crossing the RSC boundary gets serialized - passing a 50-field object when you need 1 field wastes bandwidth and increases payload size.

@@ -1,11 +1,11 @@
 // ❌ This is NOT a real hook - it doesn't use any hooks
-const useRandomNumber = () => {
+function useRandomNumber() {
   return Math.random();
-};
+}
 
 // Using the fake hook
-const MyComponent = () => {
+function MyComponent() {
   const randomNum = useRandomNumber();
 
   return <div>{randomNum}</div>;
-};
+}

@@ -1,0 +1,3 @@
+Suppress Hydration Warnings
+
+Use suppressHydrationWarning for intentional server/client differences. Timestamps, random values, and browser-specific content will differ - suppress warnings when the mismatch is expected.

@@ -1,0 +1,3 @@
+Defer Third-Party Scripts
+
+Load non-critical third-party scripts with defer or async. Analytics, chat widgets, and tracking scripts shouldn't block page rendering - defer them to after the main content loads.

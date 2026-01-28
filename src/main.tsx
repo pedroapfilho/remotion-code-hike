@@ -6,6 +6,7 @@ import { ThemeColors, ThemeProvider } from "./calculate-metadata/theme";
 import { CSSProperties, useMemo } from "react";
 import { RefreshOnCodeChange } from "./reload-on-code-change";
 import { verticalPadding } from "./font";
+import { getRemotionEnvironment } from "remotion";
 
 export type Props = {
   steps: HighlightedCode[] | null;
@@ -38,6 +39,8 @@ export const Main = ({ steps, themeColors, codeWidth }: Props) => {
     };
   }, []);
 
+  const remotionEnvironment = getRemotionEnvironment();
+
   return (
     <ThemeProvider themeColors={themeColors}>
       <AbsoluteFill style={outerStyle}>
@@ -68,7 +71,7 @@ export const Main = ({ steps, themeColors, codeWidth }: Props) => {
           </AbsoluteFill>
         </AbsoluteFill>
       </AbsoluteFill>
-      <RefreshOnCodeChange />
+      {!remotionEnvironment.isRendering && <RefreshOnCodeChange />}
     </ThemeProvider>
   );
 };

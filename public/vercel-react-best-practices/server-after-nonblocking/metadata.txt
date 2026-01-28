@@ -1,0 +1,3 @@
+Non-Blocking After Actions
+
+Use Next.js after() for non-blocking background work. Analytics, logging, and cleanup tasks shouldn't block the response - schedule them to run after the response is sent.

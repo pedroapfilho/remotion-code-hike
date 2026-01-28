@@ -1,0 +1,3 @@
+useTransition for Non-Urgent Updates
+
+Mark non-urgent state updates with useTransition. React can interrupt these updates to keep the UI responsive, prioritizing user input over background updates.

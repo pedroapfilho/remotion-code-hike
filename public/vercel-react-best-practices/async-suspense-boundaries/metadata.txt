@@ -1,0 +1,3 @@
+Suspense Boundaries
+
+Wrap async components with Suspense boundaries to show loading states. Place boundaries strategically to control loading granularity - too few creates jarring experiences, too many creates visual noise.

@@ -1,0 +1,3 @@
+Overusing useEffect
+
+Don't use useEffect for derived state or event handling. Calculate derived values during render, handle events in event handlers. useEffect is for synchronizing with external systems, not for transforming props into state.

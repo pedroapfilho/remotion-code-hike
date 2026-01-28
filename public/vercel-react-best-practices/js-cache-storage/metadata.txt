@@ -1,0 +1,3 @@
+Cache Storage Access
+
+Cache localStorage and sessionStorage reads. Storage access is synchronous and relatively slow - read once and store in memory instead of reading repeatedly.

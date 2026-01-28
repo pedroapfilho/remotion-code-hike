@@ -1,5 +1,5 @@
 // ✅ When useEffect IS needed - for side effects
-const MyComponent = ({ value }) => {
+function MyComponent({ value }) {
   useEffect(() => {
     // Side effect: logging, analytics, etc.
     console.log("Value changed to:", value);
@@ -11,6 +11,6 @@ const MyComponent = ({ value }) => {
   }, [value]);
 
   return <div>{value}</div>;
-};
+}
 
 // useEffect is for side effects, not state synchronization

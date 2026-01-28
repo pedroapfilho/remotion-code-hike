@@ -1,0 +1,3 @@
+Cache Function Results
+
+Memoize expensive function results to avoid redundant calculations. Use useMemo for render-time computations or implement manual caching for frequently called functions with the same inputs.

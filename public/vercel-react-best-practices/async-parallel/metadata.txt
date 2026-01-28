@@ -1,0 +1,3 @@
+Parallel Async Operations
+
+Use Promise.all or Promise.allSettled for independent async operations. Sequential awaits waste time - parallel execution reduces total latency to the slowest operation instead of the sum.

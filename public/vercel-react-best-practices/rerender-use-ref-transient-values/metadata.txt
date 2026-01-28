@@ -1,0 +1,3 @@
+useRef for Transient Values
+
+Store transient values in refs instead of state. Values that change frequently but don't affect rendering (like timers, animation frames) should use refs to avoid unnecessary re-renders.

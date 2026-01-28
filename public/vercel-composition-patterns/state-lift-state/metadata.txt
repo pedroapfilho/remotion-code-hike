@@ -1,0 +1,3 @@
+Lift State to Providers
+
+Move state into provider components for sibling access. This allows components outside the main UI to access and modify shared state without prop drilling. The provider boundary matters, not visual nesting.

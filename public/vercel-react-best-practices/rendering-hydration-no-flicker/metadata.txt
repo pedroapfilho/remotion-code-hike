@@ -1,0 +1,3 @@
+Prevent Hydration Flicker
+
+Ensure server and client render the same initial content. Mismatches cause hydration flicker - use useEffect for client-only content or suppressHydrationWarning when intentional.

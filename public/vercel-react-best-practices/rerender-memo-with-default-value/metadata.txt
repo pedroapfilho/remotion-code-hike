@@ -1,0 +1,3 @@
+Memo with Stable Defaults
+
+Avoid inline default values in memoized components. Default objects/arrays create new references each render, breaking memo comparison. Define defaults outside the component.

@@ -1,0 +1,3 @@
+Hoist RegExp
+
+Define regular expressions outside functions or loops. Creating RegExp objects is expensive - hoist them to module scope or use useMemo to avoid recreating them on every call.

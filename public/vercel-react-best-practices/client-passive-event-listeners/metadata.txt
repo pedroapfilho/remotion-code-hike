@@ -1,0 +1,3 @@
+Passive Event Listeners
+
+Use passive event listeners for scroll and touch events. Passive listeners tell the browser you won't call preventDefault(), allowing smoother scrolling performance.

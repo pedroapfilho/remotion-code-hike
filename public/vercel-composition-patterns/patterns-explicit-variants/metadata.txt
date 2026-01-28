@@ -1,0 +1,3 @@
+Explicit Variants
+
+Create explicit variant components instead of boolean modes. Each variant composes the pieces it needs. The code documents itself - no boolean combinations to reason about, no impossible states.

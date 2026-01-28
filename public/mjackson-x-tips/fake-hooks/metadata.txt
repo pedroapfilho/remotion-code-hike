@@ -1,0 +1,3 @@
+Fake Hooks
+
+Don't create functions that look like hooks but don't follow hook rules. Real hooks must be called at the top level of components and can't be called conditionally. If your function doesn't use React hooks internally, don't prefix it with "use".

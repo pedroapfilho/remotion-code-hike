@@ -1,0 +1,3 @@
+Use Latest Pattern
+
+Store the latest value in a ref to access current values in callbacks without adding them to dependency arrays. This prevents stale closures while keeping effects and callbacks stable.

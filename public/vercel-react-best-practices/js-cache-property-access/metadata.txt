@@ -1,0 +1,3 @@
+Cache Property Access
+
+Store frequently accessed object properties in local variables. Repeated property access through dot notation has overhead - cache the value when accessing it multiple times in a loop.

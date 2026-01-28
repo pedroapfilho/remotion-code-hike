@@ -1,10 +1,10 @@
 // ❌ Abusing refs for state-like behavior
 const countRef = useRef(0);
 
-const handleClick = () => {
+function handleClick() {
   // 🚨 Problem: This won't trigger a re-render!
   countRef.current++;
-};
+}
 
 return (
   <div>

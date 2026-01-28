@@ -1,0 +1,3 @@
+Abusing Refs
+
+Don't use refs to store values that should trigger re-renders. Refs are for values that don't affect the UI - like DOM references or timers. Use useState for values that should update the component when changed.

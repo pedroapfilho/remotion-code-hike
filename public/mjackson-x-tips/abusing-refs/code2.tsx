@@ -1,10 +1,10 @@
 // ✅ Correct: Using useState for state that affects rendering
 const [count, setCount] = useState(0);
 
-const handleClick = () => {
+function handleClick() {
   // ✅ This will trigger a re-render!
   setCount((count) => count + 1);
-};
+}
 
 return (
   <div>

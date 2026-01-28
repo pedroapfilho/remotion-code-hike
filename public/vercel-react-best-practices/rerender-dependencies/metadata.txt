@@ -1,0 +1,3 @@
+Stable Dependencies
+
+Keep effect and callback dependencies stable across renders. Recreating objects, arrays, or functions on every render causes unnecessary effect runs - use useMemo or useCallback.

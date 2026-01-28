@@ -1,0 +1,3 @@
+Async API Routes
+
+Make API route handlers async and use proper await patterns. This enables better error handling, cleaner code flow, and proper resource cleanup in Next.js API routes.

@@ -1,0 +1,3 @@
+Animate SVG Wrappers
+
+Apply CSS transforms to wrapper elements around SVGs, not directly to SVG elements. This avoids SVG-specific transform issues and enables hardware-accelerated animations.

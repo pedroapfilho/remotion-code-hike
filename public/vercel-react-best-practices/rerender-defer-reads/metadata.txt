@@ -1,0 +1,3 @@
+Defer DOM Reads
+
+Defer DOM measurements to useLayoutEffect or useEffect. Reading layout properties synchronously during render forces browser reflows - defer reads until after React commits.

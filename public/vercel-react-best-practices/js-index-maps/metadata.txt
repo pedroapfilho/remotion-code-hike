@@ -1,0 +1,3 @@
+Index Maps for Lookups
+
+Build lookup maps from arrays for frequent searches. O(1) Map/Object lookup is faster than O(n) array.find() - convert arrays to maps when you'll search by key multiple times.

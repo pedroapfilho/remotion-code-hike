@@ -1,0 +1,3 @@
+React.memo for Pure Components
+
+Wrap components with React.memo to skip re-renders when props haven't changed. Effective for components that render often with the same props - reduces unnecessary work.

@@ -1,0 +1,3 @@
+Dynamic Imports
+
+Use dynamic imports to code-split large dependencies. Components and libraries not needed for initial render should be loaded on demand, reducing the initial bundle size.

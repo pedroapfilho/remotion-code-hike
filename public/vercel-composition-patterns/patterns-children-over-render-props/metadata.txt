@@ -1,0 +1,3 @@
+Children Over Render Props
+
+Use children for composition instead of renderX props. Children are more readable, compose naturally with JSX, and don't require understanding callback signatures. Use render props only when passing data back to the child.

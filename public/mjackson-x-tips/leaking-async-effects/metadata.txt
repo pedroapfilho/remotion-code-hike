@@ -1,0 +1,3 @@
+Leaking Async Effects
+
+Always clean up async operations in useEffect. When a component unmounts before an async operation completes, you'll get memory leaks and "setState on unmounted component" warnings. Use cleanup functions or AbortController to cancel pending operations.

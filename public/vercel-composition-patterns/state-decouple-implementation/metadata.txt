@@ -1,0 +1,3 @@
+Decouple State Implementation
+
+The provider should be the only place that knows how state is managed. UI components consume the context interface - they don't know if state comes from useState, Zustand, or server sync. This enables swapping implementations without changing UI.

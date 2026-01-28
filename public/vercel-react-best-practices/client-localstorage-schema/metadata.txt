@@ -1,0 +1,3 @@
+LocalStorage Schema Validation
+
+Validate localStorage data with a schema before using it. Storage can contain outdated or corrupted data - parse and validate to prevent runtime errors from unexpected shapes.

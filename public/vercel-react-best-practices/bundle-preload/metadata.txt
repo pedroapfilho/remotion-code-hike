@@ -1,0 +1,3 @@
+Preload Critical Resources
+
+Use link preload for critical resources that will be needed soon. Preload fonts, above-the-fold images, and critical scripts to reduce perceived load time.

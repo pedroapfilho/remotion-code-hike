@@ -1,0 +1,3 @@
+Avoid Duplicate RSC Props
+
+Don't pass the same data in multiple forms through RSC boundaries. Send data once and derive transformations (sorting, filtering) on the client to reduce serialization payload and improve performance.

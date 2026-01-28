@@ -1,0 +1,3 @@
+Async Dependencies
+
+Await async operations in the correct order based on their dependencies. Don't await independent operations sequentially - identify which operations depend on each other and parallelize the rest.

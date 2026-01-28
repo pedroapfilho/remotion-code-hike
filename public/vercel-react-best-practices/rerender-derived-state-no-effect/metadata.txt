@@ -1,0 +1,3 @@
+No Effect for Derived State
+
+Don't use useEffect to sync derived state. Effects run after render, causing an extra render cycle. Calculate derived values directly during render instead.

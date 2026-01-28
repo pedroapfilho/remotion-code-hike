@@ -1,0 +1,3 @@
+Move Effect Logic to Events
+
+Handle user-triggered actions in event handlers, not effects. Effects are for synchronization with external systems - user actions should be handled where they occur.

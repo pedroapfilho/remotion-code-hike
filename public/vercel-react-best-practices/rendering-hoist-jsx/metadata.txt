@@ -1,0 +1,3 @@
+Hoist Static JSX
+
+Move static JSX outside components to avoid recreating elements on every render. Static content that doesn't depend on props or state can be defined once at module scope.

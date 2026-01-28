@@ -1,0 +1,3 @@
+Set and Map for Lookups
+
+Use Set for existence checks and Map for key-value lookups. Set.has() and Map.get() are O(1) operations - much faster than array.includes() or array.find() for repeated lookups.

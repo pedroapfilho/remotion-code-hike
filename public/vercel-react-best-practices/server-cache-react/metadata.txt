@@ -1,0 +1,3 @@
+React.cache() with Primitives
+
+Use primitive values as React.cache() keys, not objects. Objects create new references on each call, causing cache misses even with identical data. Primitives like strings and numbers enable proper deduplication.

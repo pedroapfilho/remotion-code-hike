@@ -1,0 +1,3 @@
+Context Interface
+
+Define a generic interface with state, actions, and meta for dependency injection. This interface is a contract that any provider can implement - enabling the same UI components to work with completely different state implementations.

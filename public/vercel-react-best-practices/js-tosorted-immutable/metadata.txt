@@ -1,0 +1,3 @@
+Immutable Array Methods
+
+Use toSorted(), toReversed(), and toSpliced() for immutable operations. These return new arrays without mutating the original - safer for React state and avoids spread-then-sort patterns.

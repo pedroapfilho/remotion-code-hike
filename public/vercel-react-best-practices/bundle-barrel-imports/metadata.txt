@@ -1,0 +1,3 @@
+Avoid Barrel Imports
+
+Import directly from source files instead of barrel files (index.ts). Barrel imports can pull in the entire module even when you only need one export, bloating your bundle size.

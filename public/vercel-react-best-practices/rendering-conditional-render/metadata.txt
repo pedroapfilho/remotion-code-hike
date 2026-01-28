@@ -1,0 +1,3 @@
+Conditional Rendering
+
+Use conditional rendering instead of CSS display:none for expensive components. Hidden components still execute - conditional rendering prevents unnecessary computation and memory usage.

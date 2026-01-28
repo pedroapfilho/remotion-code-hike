@@ -1,0 +1,3 @@
+Authenticate Server Actions
+
+Treat Server Actions like public API endpoints - always verify authentication and authorization inside the action. Anyone can call a Server Action directly, so never assume the caller is authenticated just because they reached your code.

@@ -1,0 +1,3 @@
+Event Listener Cleanup
+
+Always remove event listeners in useEffect cleanup. Failing to clean up creates memory leaks and can cause bugs when handlers fire on unmounted components.

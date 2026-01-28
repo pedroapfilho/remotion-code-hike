@@ -1,0 +1,3 @@
+Event Handler Refs
+
+Use refs to store event handlers that shouldn't trigger re-renders. This keeps callbacks stable across renders while still accessing the latest values, avoiding stale closure issues without adding dependencies.

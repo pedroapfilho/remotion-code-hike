@@ -1,11 +1,11 @@
 // ✅ Better: Just a regular utility function
-const getRandomNumber = () => {
+function getRandomNumber() {
   return Math.random();
-};
+}
 
 // Using the utility function
-const MyComponent = () => {
+function MyComponent() {
   const randomNum = getRandomNumber();
 
   return <div>{randomNum}</div>;
-};
+}

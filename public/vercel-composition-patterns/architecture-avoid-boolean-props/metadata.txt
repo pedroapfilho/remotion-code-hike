@@ -1,0 +1,3 @@
+Avoid Boolean Props
+
+Don't add boolean props to customize component behavior. Each boolean doubles possible states and creates unmaintainable conditional logic. Instead, create explicit variant components that declare exactly what they render.

@@ -1,0 +1,3 @@
+Batch DOM and CSS Operations
+
+Batch DOM reads and writes to avoid layout thrashing. Reading layout properties then writing styles forces synchronous reflows - batch reads together, then batch writes.

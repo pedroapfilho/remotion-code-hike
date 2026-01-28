@@ -1,0 +1,3 @@
+Derived State
+
+Calculate derived values during render instead of storing in state. Derived state creates sync bugs and unnecessary re-renders - compute from source state when needed.

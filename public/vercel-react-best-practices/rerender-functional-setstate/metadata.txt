@@ -1,0 +1,3 @@
+Functional setState
+
+Use functional updates when new state depends on previous state. setState(prev => prev + 1) ensures you're working with the latest value, avoiding stale state bugs in async contexts.

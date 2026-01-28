@@ -1,0 +1,3 @@
+useTransition for Loading States
+
+Use useTransition to mark state updates as non-urgent. This keeps the UI responsive during expensive updates by allowing React to interrupt rendering for higher-priority work.

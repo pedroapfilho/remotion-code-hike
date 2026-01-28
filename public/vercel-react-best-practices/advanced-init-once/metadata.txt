@@ -1,0 +1,3 @@
+Initialize Once
+
+Use lazy initialization for expensive computations that only need to run once. Pass a function to useState instead of a value to avoid re-running the computation on every render.
