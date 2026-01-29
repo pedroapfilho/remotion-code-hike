@@ -12,7 +12,7 @@ function ComposerFrame({ children }: { children: React.ReactNode }) {
     <Composer.Formatting />
     <SubmitButton />
   </Composer.Footer>
-</Composer.Frame>
+</Composer.Frame>;
 
 // Static structure -> children
 // Dynamic data injection -> render props

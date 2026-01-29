@@ -2,11 +2,11 @@
 // ✅ Right: Serializes only 1 field
 
 async function Page() {
-  const user = await fetchUser()
-  return <Profile name={user.name} />
+  const user = await fetchUser();
+  return <Profile name={user.name} />;
 }
 
-'use client'
+("use client");
 function Profile({ name }: { name: string }) {
-  return <div>{name}</div>
+  return <div>{name}</div>;
 }

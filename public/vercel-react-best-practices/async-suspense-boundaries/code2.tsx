@@ -13,10 +13,10 @@ function Page() {
       </div>
       <div>Footer</div>
     </div>
-  )
+  );
 }
 
 async function DataDisplay() {
-  const data = await fetchData() // Only blocks this component
-  return <div>{data.content}</div>
+  const data = await fetchData(); // Only blocks this component
+  return <div>{data.content}</div>;
 }

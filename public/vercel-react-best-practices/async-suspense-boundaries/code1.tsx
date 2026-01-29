@@ -2,8 +2,8 @@
 // ❌ Wrong: This approach has performance issues
 
 async function Page() {
-  const data = await fetchData() // Blocks entire page
-  
+  const data = await fetchData(); // Blocks entire page
+
   return (
     <div>
       <div>Sidebar</div>
@@ -13,5 +13,5 @@ async function Page() {
       </div>
       <div>Footer</div>
     </div>
-  )
+  );
 }

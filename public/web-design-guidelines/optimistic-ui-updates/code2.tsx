@@ -14,9 +14,5 @@ function LikeButton({ postId }: { postId: string }) {
     }
   };
 
-  return (
-    <button onClick={handleLike}>
-      {isLiked ? "❤️" : "🤍"}
-    </button>
-  );
+  return <button onClick={handleLike}>{isLiked ? "❤️" : "🤍"}</button>;
 }

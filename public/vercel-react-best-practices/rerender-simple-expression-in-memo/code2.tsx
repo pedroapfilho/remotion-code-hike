@@ -2,8 +2,8 @@
 // ✅ Right: Simple boolean check is faster than useMemo overhead
 
 function Header({ user, notifications }: Props) {
-  const isLoading = user.isLoading || notifications.isLoading
+  const isLoading = user.isLoading || notifications.isLoading;
 
-  if (isLoading) return <Skeleton />
+  if (isLoading) return <Skeleton />;
   // return some markup
 }

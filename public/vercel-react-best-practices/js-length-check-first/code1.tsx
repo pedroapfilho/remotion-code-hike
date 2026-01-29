@@ -3,5 +3,5 @@
 
 function hasChanges(current: string[], original: string[]) {
   // Always sorts and joins, even when lengths differ
-  return current.sort().join() !== original.sort().join()
+  return current.sort().join() !== original.sort().join();
 }

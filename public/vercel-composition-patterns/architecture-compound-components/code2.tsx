@@ -16,4 +16,4 @@ function ComposerSubmit() {
 <Composer.Provider state={state} actions={actions}>
   <Composer.Input />
   <Composer.Submit />
-</Composer.Provider>
+</Composer.Provider>;

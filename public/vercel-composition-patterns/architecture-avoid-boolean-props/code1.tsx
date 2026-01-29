@@ -9,10 +9,13 @@ function Composer({ isThread, isDMThread, isEditing, isForwarding }: Props) {
       ) : isThread ? (
         <AlsoSendToChannelField />
       ) : null}
-      {isEditing ? <EditActions /> : isForwarding ? <ForwardActions /> : <DefaultActions />}
+      {isEditing ? (
+        <EditActions />
+      ) : isForwarding ? (
+        <ForwardActions />
+      ) : (
+        <DefaultActions />
+      )}
     </form>
   );
 }
-
-// 4 booleans = 16 possible state combinations
-// Most are invalid but nothing prevents them

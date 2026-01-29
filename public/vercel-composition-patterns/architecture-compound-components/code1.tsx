@@ -1,11 +1,10 @@
 // ❌ Wrong: Render props and boolean flags create rigid APIs
 
-function Composer({ renderHeader, renderFooter, showAttachments }: Props) {
+function Composer({ renderHeader, renderFooter }: Props) {
   return (
     <form>
       {renderHeader?.()}
       <Input />
-      {showAttachments && <Attachments />}
       {renderFooter ? renderFooter() : <DefaultFooter />}
     </form>
   );
@@ -14,6 +13,9 @@ function Composer({ renderHeader, renderFooter, showAttachments }: Props) {
 // Usage is awkward - callback signatures and boolean combos
 <Composer
   renderHeader={() => <CustomHeader />}
-  renderFooter={() => <><Formatting /><Emojis /></>}
-  showAttachments={true}
-/>
+  renderFooter={() => (
+    <>
+      <Emojis />
+    </>
+  )}
+/>;

@@ -10,7 +10,9 @@
     "build": "remotion bundle",
     "render": "pnpm dlx tsx scripts/render-all.ts",
     "upgrade": "remotion upgrade",
-    "lint": "tsc && eslint src"
+    "lint": "tsc && eslint src",
+    "format": "prettier --write src/**/*.{ts,tsx}",
+    "format:public": "prettier --write public/**/*.{ts,tsx}"
   },
   "dependencies": {
     "@code-hike/lighter": "1.0.3",

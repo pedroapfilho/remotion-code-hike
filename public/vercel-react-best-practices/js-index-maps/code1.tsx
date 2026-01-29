@@ -2,8 +2,8 @@
 // ❌ Wrong: This approach has performance issues
 
 function processOrders(orders: Order[], users: User[]) {
-  return orders.map(order => ({
+  return orders.map((order) => ({
     ...order,
-    user: users.find(u => u.id === order.userId)
-  }))
+    user: users.find((u) => u.id === order.userId),
+  }));
 }

@@ -5,7 +5,7 @@ function UserList({ users }: { users: User[] }) {
   // Creates new sorted array, original unchanged
   const sorted = useMemo(
     () => users.toSorted((a, b) => a.name.localeCompare(b.name)),
-    [users]
-  )
-  return <div>{sorted.map(renderUser)}</div>
+    [users],
+  );
+  return <div>{sorted.map(renderUser)}</div>;
 }

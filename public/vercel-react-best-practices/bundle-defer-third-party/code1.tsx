@@ -1,7 +1,7 @@
 // Defer Non-Critical Third-Party Libraries
 // ❌ Wrong: This approach has performance issues
 
-import { Analytics } from '@vercel/analytics/react'
+import { Analytics } from "@vercel/analytics/react";
 
 export default function RootLayout({ children }) {
   return (
@@ -11,5 +11,5 @@ export default function RootLayout({ children }) {
         <Analytics />
       </body>
     </html>
-  )
+  );
 }

@@ -2,13 +2,13 @@
 // ✅ Right: Both fetch simultaneously
 
 async function Header() {
-  const data = await fetchHeader()
-  return <div>{data}</div>
+  const data = await fetchHeader();
+  return <div>{data}</div>;
 }
 
 async function Sidebar() {
-  const items = await fetchSidebarItems()
-  return <nav>{items.map(renderItem)}</nav>
+  const items = await fetchSidebarItems();
+  return <nav>{items.map(renderItem)}</nav>;
 }
 
 export default function Page() {
@@ -17,5 +17,5 @@ export default function Page() {
       <Header />
       <Sidebar />
     </div>
-  )
+  );
 }

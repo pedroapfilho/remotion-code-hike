@@ -2,5 +2,5 @@
 // ❌ Wrong: This approach has performance issues
 
 useEffect(() => {
-  console.log(user.id)
-}, [user])
+  console.log(user.id);
+}, [user]);

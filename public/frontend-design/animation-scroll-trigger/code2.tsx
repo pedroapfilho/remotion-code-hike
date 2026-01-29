@@ -5,7 +5,6 @@ const styles = `
     animation-timeline: view();
     animation-range: entry 0% entry 30%;
   }
-
   @keyframes reveal {
     from { opacity: 0; transform: translateY(40px); }
     to { opacity: 1; transform: translateY(0); }

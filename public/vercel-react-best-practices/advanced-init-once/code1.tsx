@@ -3,9 +3,9 @@
 
 function Comp() {
   useEffect(() => {
-    loadFromStorage()
-    checkAuthToken()
-  }, [])
+    loadFromStorage();
+    checkAuthToken();
+  }, []);
 
   // ...
 }

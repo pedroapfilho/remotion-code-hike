@@ -33,7 +33,7 @@ export const calculateMetadata: CalculateMetadataFunction<
       .map(({ value }) => value.split("\n"))
       .flat()
       .map((value) => value.replaceAll("\t", " ".repeat(tabSize)).length)
-      .flat()
+      .flat(),
   );
   const codeWidth = widthPerCharacter * maxCharacters;
 

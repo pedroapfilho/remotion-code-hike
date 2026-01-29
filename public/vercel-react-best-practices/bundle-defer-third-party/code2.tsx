@@ -1,12 +1,12 @@
 // Defer Non-Critical Third-Party Libraries
 // ✅ Right: Loads after hydration
 
-import dynamic from 'next/dynamic'
+import dynamic from "next/dynamic";
 
 const Analytics = dynamic(
-  () => import('@vercel/analytics/react').then(m => m.Analytics),
-  { ssr: false }
-)
+  () => import("@vercel/analytics/react").then((m) => m.Analytics),
+  { ssr: false },
+);
 
 export default function RootLayout({ children }) {
   return (
@@ -16,5 +16,5 @@ export default function RootLayout({ children }) {
         <Analytics />
       </body>
     </html>
-  )
+  );
 }

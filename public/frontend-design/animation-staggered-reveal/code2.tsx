@@ -5,7 +5,10 @@ function FeatureGrid({ features }: { features: string[] }) {
   return (
     <div className="grid">
       {features.map((feature, i) => (
-        <div key={feature} className={`animate-slide-up ${delays[i % delays.length]}`}>
+        <div
+          key={feature}
+          className={`animate-slide-up ${delays[i % delays.length]}`}
+        >
           {feature}
         </div>
       ))}

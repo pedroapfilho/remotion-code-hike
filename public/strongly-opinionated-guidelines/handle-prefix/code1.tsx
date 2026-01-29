@@ -3,6 +3,4 @@ const click = () => setOpen(true);
 const submitForm = () => save(data);
 const onDelete = () => remove(id);
 
-return (
-  <button onClick={click}>Open</button>
-);
+return <button onClick={click}>Open</button>;

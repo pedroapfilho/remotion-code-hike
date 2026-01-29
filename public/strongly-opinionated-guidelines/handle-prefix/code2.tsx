@@ -3,6 +3,4 @@ const handleClick = () => setOpen(true);
 const handleSubmit = () => save(data);
 const handleDelete = () => remove(id);
 
-return (
-  <button onClick={handleClick}>Open</button>
-);
+return <button onClick={handleClick}>Open</button>;

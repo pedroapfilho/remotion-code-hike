@@ -3,7 +3,7 @@
 
 function useWindowEvent(event: string, handler: (e) => void) {
   useEffect(() => {
-    window.addEventListener(event, handler)
-    return () => window.removeEventListener(event, handler)
-  }, [event, handler])
+    window.addEventListener(event, handler);
+    return () => window.removeEventListener(event, handler);
+  }, [event, handler]);
 }

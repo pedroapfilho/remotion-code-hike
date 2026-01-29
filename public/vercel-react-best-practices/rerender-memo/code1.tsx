@@ -3,10 +3,10 @@
 
 function Profile({ user, loading }: Props) {
   const avatar = useMemo(() => {
-    const id = computeAvatarId(user)
-    return <Avatar id={id} />
-  }, [user])
+    const id = computeAvatarId(user);
+    return <Avatar id={id} />;
+  }, [user]);
 
-  if (loading) return <Skeleton />
-  return <div>{avatar}</div>
+  if (loading) return <Skeleton />;
+  return <div>{avatar}</div>;
 }

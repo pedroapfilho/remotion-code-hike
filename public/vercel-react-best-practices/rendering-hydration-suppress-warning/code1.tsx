@@ -2,5 +2,5 @@
 // ❌ Wrong: This approach has performance issues
 
 function Timestamp() {
-  return <span>{new Date().toLocaleString()}</span>
+  return <span>{new Date().toLocaleString()}</span>;
 }

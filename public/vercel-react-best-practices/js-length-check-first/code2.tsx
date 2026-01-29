@@ -4,15 +4,15 @@
 function hasChanges(current: string[], original: string[]) {
   // Early return if lengths differ
   if (current.length !== original.length) {
-    return true
+    return true;
   }
   // Only sort when lengths match
-  const currentSorted = current.toSorted()
-  const originalSorted = original.toSorted()
+  const currentSorted = current.toSorted();
+  const originalSorted = original.toSorted();
   for (let i = 0; i < currentSorted.length; i++) {
     if (currentSorted[i] !== originalSorted[i]) {
-      return true
+      return true;
     }
   }
-  return false
+  return false;
 }

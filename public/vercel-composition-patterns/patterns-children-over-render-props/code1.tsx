@@ -13,7 +13,12 @@ function Composer({ renderHeader, renderFooter }: Props) {
 // Usage requires understanding callback signatures
 <Composer
   renderHeader={() => <CustomHeader />}
-  renderFooter={() => <><Formatting /><Emojis /></>}
-/>
+  renderFooter={() => (
+    <>
+      <Formatting />
+      <Emojis />
+    </>
+  )}
+/>;
 
 // Can't easily reorder or add elements

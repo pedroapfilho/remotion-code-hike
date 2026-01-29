@@ -6,7 +6,7 @@
   channelId="abc"
   showAttachments
   showFormatting={false}
-/>
+/>;
 
 // To understand the output, you must:
 // 1. Read the component implementation

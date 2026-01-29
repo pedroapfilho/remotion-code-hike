@@ -2,5 +2,5 @@
 // ✅ Right: Re-runs only when id changes
 
 useEffect(() => {
-  console.log(user.id)
-}, [user.id])
+  console.log(user.id);
+}, [user.id]);

@@ -56,7 +56,7 @@ export const getFolders = (): OriginFolder[] => {
  * @param folderPath - Full folder path (e.g., "origin/snippet") to fetch files from.
  */
 export const getFiles = async (
-  folderPath?: string
+  folderPath?: string,
 ): Promise<PublicFolderFile[]> => {
   const files = getStaticFiles();
 
@@ -72,7 +72,7 @@ export const getFiles = async (
 
   // Sort files by name to ensure correct order (code1, code2, code3, etc.)
   codeFiles.sort((a, b) =>
-    a.name.localeCompare(b.name, undefined, { numeric: true })
+    a.name.localeCompare(b.name, undefined, { numeric: true }),
   );
 
   const contents = codeFiles.map(async (file): Promise<PublicFolderFile> => {

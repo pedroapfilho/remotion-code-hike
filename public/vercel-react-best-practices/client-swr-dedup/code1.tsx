@@ -2,10 +2,10 @@
 // ❌ Wrong: This approach has performance issues
 
 function UserList() {
-  const [users, setUsers] = useState([])
+  const [users, setUsers] = useState([]);
   useEffect(() => {
-    fetch('/api/users')
-      .then(r => r.json())
-      .then(setUsers)
-  }, [])
+    fetch("/api/users")
+      .then((r) => r.json())
+      .then(setUsers);
+  }, []);
 }

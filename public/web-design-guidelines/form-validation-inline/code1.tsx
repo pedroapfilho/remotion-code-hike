@@ -12,7 +12,9 @@ function LoginForm() {
   return (
     <form onSubmit={handleSubmit} className="...">
       <input name="email" type="text" className="..." />
-      <button type="submit" className="...">Submit</button>
+      <button type="submit" className="...">
+        Submit
+      </button>
     </form>
   );
 }
