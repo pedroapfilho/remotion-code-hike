@@ -1,0 +1,3 @@
+Never Mutate State
+
+Always return new objects and arrays when updating state. Mutations break React's change detection and cause subtle, hard-to-debug rendering issues.

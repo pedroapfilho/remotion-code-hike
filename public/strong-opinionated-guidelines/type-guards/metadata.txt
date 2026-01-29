@@ -1,0 +1,3 @@
+Type Guards Over Assertions
+
+Never use type assertions (as). They lie to the compiler and bypass safety checks. Use Zod or custom type guards to validate data at runtime.

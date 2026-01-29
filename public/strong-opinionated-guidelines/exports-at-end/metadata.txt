@@ -1,0 +1,3 @@
+Exports at End of File
+
+Group all exports at the end of the file. This creates a clear API surface—readers can quickly see what's public without scanning the entire file.

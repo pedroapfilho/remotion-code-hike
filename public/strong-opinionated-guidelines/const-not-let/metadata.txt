@@ -1,0 +1,3 @@
+Const Over Let
+
+Prefer const by default. It signals immutability and prevents accidental reassignment. Only use let when you genuinely need to reassign the variable.

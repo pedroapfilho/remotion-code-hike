@@ -1,0 +1,3 @@
+Name Complex Conditions
+
+Extract complex boolean expressions into named variables. The brain can only hold ~4 chunks in working memory. Named conditions are self-documenting.

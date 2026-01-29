@@ -1,0 +1,3 @@
+Never Log Secrets
+
+Never log API keys, tokens, or credentials. They end up in monitoring systems, log aggregators, and error reports—all potential security breaches.

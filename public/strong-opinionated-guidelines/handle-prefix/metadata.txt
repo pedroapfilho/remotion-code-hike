@@ -1,0 +1,3 @@
+Handle Prefix for Events
+
+Prefix all event handlers with "handle": handleClick, handleSubmit, handleChange. This convention makes event handlers instantly recognizable in the codebase.

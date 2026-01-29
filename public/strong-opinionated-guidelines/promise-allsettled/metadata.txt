@@ -1,0 +1,3 @@
+Promise.allSettled for Resilience
+
+Use Promise.allSettled instead of Promise.all. It handles partial failures gracefully—one rejected promise won't crash the entire operation.

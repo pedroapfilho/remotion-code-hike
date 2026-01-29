@@ -1,0 +1,3 @@
+Arrow Functions Only
+
+Use arrow functions instead of function expressions. They provide consistent syntax, lexical this binding, and make the codebase more uniform and predictable.

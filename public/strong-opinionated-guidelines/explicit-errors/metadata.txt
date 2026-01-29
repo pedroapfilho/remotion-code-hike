@@ -1,0 +1,3 @@
+Explicit Error Handling
+
+Never swallow errors silently. Every catch block should log, report, or surface the error to users. Silent failures hide bugs and make debugging impossible.

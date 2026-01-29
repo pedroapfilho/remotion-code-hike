@@ -1,0 +1,3 @@
+Never Use transition-all
+
+Explicitly list transition properties. transition-all animates unintended properties, causes performance issues, and produces unexpected visual glitches.

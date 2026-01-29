@@ -1,0 +1,3 @@
+Types Over Interfaces
+
+Use type aliases instead of interfaces. Types are more flexible—they support unions, intersections, and mapped types. Keep one consistent approach across the codebase.
